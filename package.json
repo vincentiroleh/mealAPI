@@ -16,5 +16,20 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "nodemon": "^1.18.10"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vincentiroleh/mealAPI.git"
+  },
+  "keywords": [
+    "api",
+    "node",
+    "express",
+    "javaScript"
+  ],
+  "bugs": {
+    "url": "https://github.com/vincentiroleh/mealAPI/issues"
+  },
+  "homepage": "https://github.com/vincentiroleh/mealAPI#readme"
 }
