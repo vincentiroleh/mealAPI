@@ -2,6 +2,15 @@ import meals from '../db/db';
 
 class MealController {
 
+  // Default URL
+  defaultURL(req, res) {
+    return res.status(200).send({
+      status: 'true',
+      message: 'Api up and running'
+    });
+  }
+
+  // Get all meals
   getAllMeals(req, res) {
     return res.status(200).send({
       success: 'true',
@@ -10,7 +19,7 @@ class MealController {
     });
   }
 
-  // Get all meal
+  // Get a single meal
   getMeal(req, res) {
     const id = parseInt(req.params.id, 10);
 

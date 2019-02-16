@@ -10,6 +10,9 @@ const router = express.Router();
 
 // TODO: OUR ENDPOINTS
 
+// Default URL message
+router.get("/", mealController.defaultURL);
+
 // get all meals
 router.get("/api/v1/meals", mealController.getAllMeals);
 

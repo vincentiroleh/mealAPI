@@ -21,17 +21,6 @@ app.use(router);
 
 
 
-// Default URL message
-app.get("/", (req, res) => {
-  res.status(200).send({
-    success: "true",
-    message: "API home working"
-  });
-});
-
-
-
-
 // Port and sever to listen on
 const PORT = 6000;
 app.listen(PORT, () => {
