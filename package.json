@@ -1,14 +1,14 @@
 {
   "name": "api_refresh",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple basic RESTFUL CRUD API for a meal booking platform",
   "main": "app.js",
   "scripts": {
     "start": "nodemon --exec babel-node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Vincent Iroleh",
+  "license": "MIT",
   "dependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
