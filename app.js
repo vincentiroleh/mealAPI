@@ -1,7 +1,7 @@
 import express from "express";
-import meals from "./db/db";
+import meals from "./utils/db";
 import bodyParser from "body-parser";
-import router from './routes/meals.route';
+import mealRouter from './routes/meals.route';
 
 
 
@@ -16,8 +16,13 @@ app.use(
   })
 );
 
-// Make use of router middleware
-app.use(router);
+app.get('/', (req, res)=> res.send({
+	status: 'true',
+	message: 'Api working perfectly'
+}));
+
+// Make use of router middleware handler
+app.use('/api/v1/meals', mealRouter);
 
 
 

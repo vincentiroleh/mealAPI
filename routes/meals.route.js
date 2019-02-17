@@ -10,23 +10,20 @@ const router = express.Router();
 
 // TODO: OUR ENDPOINTS
 
-// Default URL message
-router.get("/", mealController.defaultURL);
-
 // get all meals
-router.get("/api/v1/meals", mealController.getAllMeals);
+router.get("/", mealController.getAllMeals);
 
 // Get a single meal
-router.get('/api/v1/meals/:id', mealController.getMeal);
+router.get('/:id', mealController.getMeal);
 
 // post a meal
-router.post("/api/v1/meals", mealController.createMeal);
+router.post('/', mealController.createMeal);
 
 // Update a meal
-router.put('/api/v1/meals/:id', mealController.updateMeal);
+router.put('/:id', mealController.updateMeal);
 
 // Delete a single meal
-router.delete('/api/v1/meals/:id', mealController.deleteMeal);
+router.delete('/:id', mealController.deleteMeal);
 
 
 // TODO: Endpoints ends here

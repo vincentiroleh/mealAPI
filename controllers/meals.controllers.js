@@ -1,22 +1,17 @@
-import meals from '../db/db';
+import meals from '../utils/db';
+import Meal from '../models/meal.model';
 
 class MealController {
 
-  // Default URL
-  defaultURL(req, res) {
-    return res.status(200).send({
-      status: 'true',
-      message: 'Api up and running'
-    });
-  }
-
   // Get all meals
   getAllMeals(req, res) {
+    const foundMeal = new Meal;
     return res.status(200).send({
       success: 'true',
       message: 'meals retrieved successfully',
       data: meals,
     });
+    console.log(foundMeal);
   }
 
   // Get a single meal
